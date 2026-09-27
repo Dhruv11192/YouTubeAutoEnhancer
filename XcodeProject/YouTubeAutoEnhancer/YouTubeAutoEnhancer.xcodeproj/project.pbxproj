@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC71085630698ADF0023C785 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC71085530698ADF0023C785 /* AppDelegate.swift */; };
+		FC71085A30698ADF0023C785 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = FC71085830698ADF0023C785 /* Main.html */; };
+		FC71085C30698ADF0023C785 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FC71085B30698ADF0023C785 /* Icon.png */; };
+		FC71085E30698ADF0023C785 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = FC71085D30698ADF0023C785 /* Style.css */; };
+		FC71086030698ADF0023C785 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = FC71085F30698ADF0023C785 /* Script.js */; };
+		FC71086230698ADF0023C785 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC71086130698ADF0023C785 /* ViewController.swift */; };
+		FC71086530698ADF0023C785 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC71086330698ADF0023C785 /* Main.storyboard */; };
+		FC71086730698AE00023C785 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC71086630698AE00023C785 /* Assets.xcassets */; };
+		FC71086E30698AE00023C785 /* YouTubeAutoEnhancer Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FC71086D30698AE00023C785 /* YouTubeAutoEnhancer Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FC71087330698AE00023C785 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC71087230698AE00023C785 /* SafariWebExtensionHandler.swift */; };
+		FC71088530698AE00023C785 /* subtitles.css in Resources */ = {isa = PBXBuildFile; fileRef = FC71087F30698AE00023C785 /* subtitles.css */; };
+		FC71088630698AE00023C785 /* images in Resources */ = {isa = PBXBuildFile; fileRef = FC71088030698AE00023C785 /* images */; };
+		FC71088730698AE00023C785 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = FC71088130698AE00023C785 /* manifest.json */; };
+		FC71088830698AE00023C785 /* inject.js in Resources */ = {isa = PBXBuildFile; fileRef = FC71088230698AE00023C785 /* inject.js */; };
+		FC71088930698AE00023C785 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = FC71088330698AE00023C785 /* content.js */; };
+		FC71088A30698AE00023C785 /* inject-core.js in Resources */ = {isa = PBXBuildFile; fileRef = FC71088430698AE00023C785 /* inject-core.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC71086F30698AE00023C785 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC71084A30698ADF0023C785 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC71086C30698AE00023C785;
+			remoteInfo = "YouTubeAutoEnhancer Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FC71087A30698AE00023C785 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = PlugIns;
+			files = (
+				FC71086E30698AE00023C785 /* YouTubeAutoEnhancer Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FC71085230698ADF0023C785 /* YouTubeAutoEnhancer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTubeAutoEnhancer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC71085530698ADF0023C785 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FC71085930698ADF0023C785 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		FC71085B30698ADF0023C785 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		FC71085D30698ADF0023C785 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		FC71085F30698ADF0023C785 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		FC71086130698ADF0023C785 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FC71086430698ADF0023C785 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC71086630698AE00023C785 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC71086830698AE00023C785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC71086D30698AE00023C785 /* YouTubeAutoEnhancer Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "YouTubeAutoEnhancer Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC71087230698AE00023C785 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		FC71087430698AE00023C785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC71087F30698AE00023C785 /* subtitles.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = subtitles.css; path = Resources/subtitles.css; sourceTree = "<group>"; };
+		FC71088030698AE00023C785 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = Resources/images; sourceTree = "<group>"; };
+		FC71088130698AE00023C785 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = Resources/manifest.json; sourceTree = "<group>"; };
+		FC71088230698AE00023C785 /* inject.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = inject.js; path = Resources/inject.js; sourceTree = "<group>"; };
+		FC71088330698AE00023C785 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = content.js; path = Resources/content.js; sourceTree = "<group>"; };
+		FC71088430698AE00023C785 /* inject-core.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "inject-core.js"; path = "Resources/inject-core.js"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC71084F30698ADF0023C785 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		FC71086A30698AE00023C785 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC71084930698ADF0023C785 = {
+			isa = PBXGroup;
+			children = (
+				FC71085430698ADF0023C785 /* YouTubeAutoEnhancer */,
+				FC71087130698AE00023C785 /* YouTubeAutoEnhancer Extension */,
+				FC71085330698ADF0023C785 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC71085330698ADF0023C785 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC71085230698ADF0023C785 /* YouTubeAutoEnhancer.app */,
+				FC71086D30698AE00023C785 /* YouTubeAutoEnhancer Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC71085430698ADF0023C785 /* YouTubeAutoEnhancer */ = {
+			isa = PBXGroup;
+			children = (
+				FC71085530698ADF0023C785 /* AppDelegate.swift */,
+				FC71086130698ADF0023C785 /* ViewController.swift */,
+				FC71086330698ADF0023C785 /* Main.storyboard */,
+				FC71086630698AE00023C785 /* Assets.xcassets */,
+				FC71086830698AE00023C785 /* Info.plist */,
+				FC71085730698ADF0023C785 /* Resources */,
+			);
+			path = YouTubeAutoEnhancer;
+			sourceTree = "<group>";
+		};
+		FC71085730698ADF0023C785 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FC71085830698ADF0023C785 /* Main.html */,
+				FC71085B30698ADF0023C785 /* Icon.png */,
+				FC71085D30698ADF0023C785 /* Style.css */,
+				FC71085F30698ADF0023C785 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FC71087130698AE00023C785 /* YouTubeAutoEnhancer Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FC71087E30698AE00023C785 /* Resources */,
+				FC71087230698AE00023C785 /* SafariWebExtensionHandler.swift */,
+				FC71087430698AE00023C785 /* Info.plist */,
+			);
+			path = "YouTubeAutoEnhancer Extension";
+			sourceTree = "<group>";
+		};
+		FC71087E30698AE00023C785 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FC71087F30698AE00023C785 /* subtitles.css */,
+				FC71088030698AE00023C785 /* images */,
+				FC71088130698AE00023C785 /* manifest.json */,
+				FC71088230698AE00023C785 /* inject.js */,
+				FC71088330698AE00023C785 /* content.js */,
+				FC71088430698AE00023C785 /* inject-core.js */,
+			);
+			name = Resources;
+			path = "YouTubeAutoEnhancer Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC71085130698ADF0023C785 /* YouTubeAutoEnhancer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC71087B30698AE00023C785 /* Build configuration list for PBXNativeTarget "YouTubeAutoEnhancer" */;
+			buildPhases = (
+				FC71084E30698ADF0023C785 /* Sources */,
+				FC71084F30698ADF0023C785 /* Frameworks */,
+				FC71085030698ADF0023C785 /* Resources */,
+				FC71087A30698AE00023C785 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC71087030698AE00023C785 /* PBXTargetDependency */,
+			);
+			name = YouTubeAutoEnhancer;
+			productName = YouTubeAutoEnhancer;
+			productReference = FC71085230698ADF0023C785 /* YouTubeAutoEnhancer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC71086C30698AE00023C785 /* YouTubeAutoEnhancer Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC71087730698AE00023C785 /* Build configuration list for PBXNativeTarget "YouTubeAutoEnhancer Extension" */;
+			buildPhases = (
+				FC71086930698AE00023C785 /* Sources */,
+				FC71086A30698AE00023C785 /* Frameworks */,
+				FC71086B30698AE00023C785 /* Resources */,
+			);
+			buildRules = (
+			);
+			name = "YouTubeAutoEnhancer Extension";
+			productName = "YouTubeAutoEnhancer Extension";
+			productReference = FC71086D30698AE00023C785 /* YouTubeAutoEnhancer Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC71084A30698ADF0023C785 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					FC71085130698ADF0023C785 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					FC71086C30698AE00023C785 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+				};
+			};
+			buildConfigurationList = FC71084D30698ADF0023C785 /* Build configuration list for PBXProject "YouTubeAutoEnhancer" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC71084930698ADF0023C785;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = FC71085330698ADF0023C785 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC71085130698ADF0023C785 /* YouTubeAutoEnhancer */,
+				FC71086C30698AE00023C785 /* YouTubeAutoEnhancer Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC71085030698ADF0023C785 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				FC71085C30698ADF0023C785 /* Icon.png in Resources */,
+				FC71086530698ADF0023C785 /* Main.storyboard in Resources */,
+				FC71086030698ADF0023C785 /* Script.js in Resources */,
+				FC71085A30698ADF0023C785 /* Main.html in Resources */,
+				FC71086730698AE00023C785 /* Assets.xcassets in Resources */,
+				FC71085E30698ADF0023C785 /* Style.css in Resources */,
+			);
+		};
+		FC71086B30698AE00023C785 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				FC71088630698AE00023C785 /* images in Resources */,
+				FC71088830698AE00023C785 /* inject.js in Resources */,
+				FC71088A30698AE00023C785 /* inject-core.js in Resources */,
+				FC71088730698AE00023C785 /* manifest.json in Resources */,
+				FC71088530698AE00023C785 /* subtitles.css in Resources */,
+				FC71088930698AE00023C785 /* content.js in Resources */,
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC71084E30698ADF0023C785 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				FC71086230698ADF0023C785 /* ViewController.swift in Sources */,
+				FC71085630698ADF0023C785 /* AppDelegate.swift in Sources */,
+			);
+		};
+		FC71086930698AE00023C785 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				FC71087330698AE00023C785 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC71087030698AE00023C785 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC71086C30698AE00023C785 /* YouTubeAutoEnhancer Extension */;
+			targetProxy = FC71086F30698AE00023C785 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FC71085830698ADF0023C785 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC71085930698ADF0023C785 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		FC71086330698ADF0023C785 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC71086430698ADF0023C785 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC71087530698AE00023C785 /* Debug configuration for PBXProject "YouTubeAutoEnhancer" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FC71087630698AE00023C785 /* Release configuration for PBXProject "YouTubeAutoEnhancer" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		FC71087830698AE00023C785 /* Debug configuration for PBXNativeTarget "YouTubeAutoEnhancer Extension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "YouTubeAutoEnhancer Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "YouTubeAutoEnhancer Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dhruv.YouTubeAutoEnhancer.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FC71087930698AE00023C785 /* Release configuration for PBXNativeTarget "YouTubeAutoEnhancer Extension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "YouTubeAutoEnhancer Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "YouTubeAutoEnhancer Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dhruv.YouTubeAutoEnhancer.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		FC71087C30698AE00023C785 /* Debug configuration for PBXNativeTarget "YouTubeAutoEnhancer" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YouTubeAutoEnhancer/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = YouTubeAutoEnhancer;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_NSViewGestureRecognizerIsExclusive = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dhruv.YouTubeAutoEnhancer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FC71087D30698AE00023C785 /* Release configuration for PBXNativeTarget "YouTubeAutoEnhancer" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YouTubeAutoEnhancer/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = YouTubeAutoEnhancer;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_NSViewGestureRecognizerIsExclusive = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dhruv.YouTubeAutoEnhancer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC71084D30698ADF0023C785 /* Build configuration list for PBXProject "YouTubeAutoEnhancer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC71087530698AE00023C785 /* Debug configuration for PBXProject "YouTubeAutoEnhancer" */,
+				FC71087630698AE00023C785 /* Release configuration for PBXProject "YouTubeAutoEnhancer" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		FC71087730698AE00023C785 /* Build configuration list for PBXNativeTarget "YouTubeAutoEnhancer Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC71087830698AE00023C785 /* Debug configuration for PBXNativeTarget "YouTubeAutoEnhancer Extension" */,
+				FC71087930698AE00023C785 /* Release configuration for PBXNativeTarget "YouTubeAutoEnhancer Extension" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		FC71087B30698AE00023C785 /* Build configuration list for PBXNativeTarget "YouTubeAutoEnhancer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC71087C30698AE00023C785 /* Debug configuration for PBXNativeTarget "YouTubeAutoEnhancer" */,
+				FC71087D30698AE00023C785 /* Release configuration for PBXNativeTarget "YouTubeAutoEnhancer" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC71084A30698ADF0023C785 /* Project object */;
+	validationLevel = 1;
+}
