@@ -21,6 +21,37 @@ export function selectBestQuality(availableLevels) {
   return availableLevels[0];
 }
 
+export function parseQualityFromLabel(text) {
+  if (!text || typeof text !== 'string') return 0;
+  // If it's the "Auto" option, ignore so we force a fixed quality
+  if (/auto/i.test(text)) return 0;
+
+  const match = text.match(/(\d{3,4})p/i);
+  if (match) {
+    return parseInt(match[1], 10);
+  }
+  if (/4k/i.test(text)) return 2160;
+  if (/8k/i.test(text)) return 4320;
+  return 0;
+}
+
+export function findBestQualityMenuItem(items) {
+  if (!Array.isArray(items) || items.length === 0) return null;
+
+  let bestItem = null;
+  let maxRes = -1;
+
+  for (const item of items) {
+    const res = parseQualityFromLabel(item.text);
+    if (res > maxRes) {
+      maxRes = res;
+      bestItem = item;
+    }
+  }
+
+  return bestItem;
+}
+
 export function applyEnhancementsToMockPlayer(player, video, targetSpeed = 1.5) {
   if (!player) return;
 

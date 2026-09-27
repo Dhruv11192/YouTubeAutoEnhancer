@@ -12,8 +12,14 @@ describe('Manifest V3 Configuration', () => {
     assert.equal(manifest.manifest_version, 3);
     assert.ok(manifest.host_permissions.some(p => p.includes('youtube.com')));
     assert.ok(manifest.content_scripts.length > 0);
-    assert.ok(manifest.content_scripts[0].css.includes('subtitles.css'));
-    assert.ok(manifest.content_scripts[0].js.includes('content.js'));
+
+    // Check all content scripts for required files
+    const allCss = manifest.content_scripts.flatMap(cs => cs.css || []);
+    const allJs = manifest.content_scripts.flatMap(cs => cs.js || []);
+
+    assert.ok(allCss.includes('subtitles.css'));
+    assert.ok(allJs.includes('inject.js'));
+    assert.ok(allJs.includes('content.js'));
     assert.ok(manifest.web_accessible_resources[0].resources.includes('inject.js'));
   });
 

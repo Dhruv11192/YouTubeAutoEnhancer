@@ -1,12 +1,18 @@
 {
   "manifest_version": 3,
   "name": "YouTube Auto Enhancer (4K, Subtitles, 1.5x)",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Automatically sets 4K quality, 1.5x speed, and transparent drop-shadow subtitles on YouTube.",
   "host_permissions": [
     "*://*.youtube.com/*"
   ],
   "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["inject.js"],
+      "world": "MAIN",
+      "run_at": "document_start"
+    },
     {
       "matches": ["*://*.youtube.com/*"],
       "js": ["content.js"],
